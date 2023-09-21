@@ -1,11 +1,447 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <!-- Metadatos -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Francisco Diaz">
+  <meta name="description" content="Sitio web para la empresa Sarita Colonia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- etiquetas que llaman al archivo Css en HTML -->
+  <link rel="stylesheet" href="stylitos.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- titulo -->
+  <title>Libreria Sarita Colonia</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="graficos/marca.png">
+  <!-- pagina de iconos -->
+  <script src="https://kit.fontawesome.com/3d485c3ad8.js" crossorigin="anonymous"></script>
+  <!-- estilos de letra de roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2? family=Dancing+Script&display=swap" rel="stylesheet">
+  <!-- Utilización de java script -->
+  <script>
+    var contador = 0;
+
+    function contarClics() {
+    contador++;                                                                // La cantidad de clicks a los botones de los libros
+    document.getElementById("contador").textContent = contador;
+    }
+  </script>
 </head>
 <body>
-   web_de_lectura_para_niños
+<!-- encabezado -->
+  <header class="container-fluid bg-primary d-flex justify-content-center">
+    <div class="header-content">
+      <i class="fas fa-truck fa-xl mb-0 p-2 header-icon"></i>
+      <p class="text-light mb-0 p-2 fs-4 header-text">
+        "Ven y visítanos en nuestras múltiples tiendas"
+      </p>
+      <i class="fab fa-shopify fa-xl mb-0  p-4 header-icon"></i>
+    </div>
+  </header>  
+<!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-md bg-warning">
+    <div class="container " id="menu">
+      <a class="navbar-brand" href="#"><img src="graficos/marca.png" alt="logo" width="150px"></a>                  <!--logo-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-4 ms-3 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="isi.html">Inicio</a>                     
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control flex-grow-1 me-2" type="search" placeholder="Buscar libro" aria-label="Search">
+          <button class="btn btn-primary btn-custom ms-3 btn-md " type="submit">Buscar</button>
+        </form>
+        <ul class="navbar-nav  ms-2 mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active me-3" aria-current="page" href="index.html">Iniciar Sesión</a>
+        </li>
+        <li class="nav-item position-relative" id="carrito">
+          <a class="nav-link " href="#"><i class="fa-solid fa-cart-shopping fa-2xl" ></i></a>                        <!--icono del carrito-->
+          <span id="contador">0</span>                                                                                    <!--contador-->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<section class="categori bg-warning">
+  <button  class="botones btn-outline-custom">Novedades</button>  |
+  <button  class="botones btn-outline-custom">Infantil</button>  |
+  <button  class="botones btn-outline-custom">Juvenil</button>  |                                                   <!--categorias de libros-->
+  <button  class="botones btn-outline-custom">Audiolibro</button>  |
+  <button  class="botones btn-outline-custom">Ebooks</button>  
+</section>
+
+<!-- slide carrusel -->
+
+<section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"data-bs-interval="2000">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="graficos/promo1.jpg" class="d-block w-100" alt="Publicidad 1">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="graficos/promo2.jpg" class="d-block w-100" alt="Publicidad 2">
+    </div>
+    <div class="carousel-item">
+      <img src="graficos/promo3.jpg" class="d-block w-100" alt="Publicidad 3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</section>
+
+<!-- libros -->
+
+<section class="libros seccion-clara ">
+  <div class="container-fluid  ">
+    <div class="row bg-warning">
+      <p>Libros más vendidos</p>
+      <div class="col-12 col-md-3 p-5">
+        <div class="image-container">
+          <img src="graficos/asu.jpg" alt="liebre" >
+          <div class="overlay">
+            <p>Luisa siempre va de prisa</p>
+            <div class="icono-contenedor">
+              <a href="https://www.youtube.com/watch?v=o0p4HDiJoVo&list=LL&index=112" target="_blank"><i class="fa-solid fa-tag fa-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="titulo-container">
+        <button  class="titulo botones btn-outline-custom" onclick="contarClics()" >Luisa siempre va de prisa</button>   
+        </div>
+      </div>
+      <div class="col-12 col-md-3 p-5">
+        <div class="image-container">
+          <img src="graficos/libro1.jpg" alt="almendra" >
+          <div class="overlay">
+            <p>Almendra</p>
+            <div class="icono-contenedor">
+              <a href="https://www.facebook.com/Carlonchostore" target="_blank"><i class="fa-solid fa-tag fa-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="titulo-container">
+          <button  class="titulo botones btn-outline-custom" onclick="contarClics()" >Almendra</button>   
+        </div>
+      </div>
+      <div class="col-12 col-md-3 p-5">
+        <div class="image-container">
+          <img src="graficos/spy.jpg" alt="spy family" >
+          <div class="overlay">
+            <p>Spy family</p>
+            <div class="icono-contenedor">
+              <a href="https://www.youtube.com/watch?v=o0p4HDiJoVo&list=LL&index=112" target="_blank"><i class="fa-solid fa-tag fa-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+          <div class="titulo-container">
+          <button  class="titulo botones btn-outline-custom" onclick="contarClics()" >Spy family</button>   
+          </div>
+      </div>
+      <div class="col-12 col-md-3 p-5">
+        <div class="image-container">
+          <img src="graficos/manga.jpg" alt="chainsawn man" >
+          <div class="overlay">
+            <p>chainsawn man</p>
+            <div class="icono-contenedor">
+              <a href="compra.html" target="_blank"><i class="fa-solid fa-tag fa-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="titulo-container">
+         <button  class="titulo botones btn-outline-custom" onclick="contarClics()" >Chainsawn man</button>    
+        </div>
+      </div>
+    </div>
+
+     <div class="espacio"></div>
+
+    <div class="row bg-warning">
+      <p>Libros destacados</p>
+      <div class="col-12 col-md-3 p-5">
+        <div class="image-container">
+        <img src="graficos/casa.jpg" alt="Todo queda en casa" >
+        <div class="overlay">
+          <p>Todo queda en casa</p>
+          <div class="icono-contenedor">
+            <a href="https://www.youtube.com/watch?v=o0p4HDiJoVo&list=LL&index=112" target="_blank"><i class="fa-solid fa-tag fa-2xl"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="titulo-container">
+        <button  class="titulo botones btn-outline-custom" >Todo queda en casa</button>   
+      </div>
+      </div>
+      <div class="col-12 col-md-3 p-5">
+        <div class="image-container">
+          <img src="graficos/gallo.jpg" alt="El coronel no tiene quien le escriba" >
+          <div class="overlay">
+            <p>El coronel no tiene quien le escriba</p>
+            <div class="icono-contenedor">
+              <a href="https://www.youtube.com/watch?v=o0p4HDiJoVo&list=LL&index=112" target="_blank"><i class="fa-solid fa-tag fa-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="titulo-container">
+          <button  class="titulo botones btn-outline-custom" >El coronel no tiene quien le escriba</button>   
+        </div>
+      </div>
+      <div class="col-12 col-md-3 p-5">
+        <div class="image-container">
+          <img src="graficos/cultura.jpg" alt="La batalla cultural" >
+          <div class="overlay">
+            <p>La batalla cultural</p>
+            <div class="icono-contenedor">
+              <a href="https://www.youtube.com/watch?v=o0p4HDiJoVo&list=LL&index=112" target="_blank"><i class="fa-solid fa-tag fa-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="titulo-container">
+          <button  class="titulo botones btn-outline-custom" >La batalla cultural</button>   
+        </div>
+      </div>
+      <div class="col-12 col-md-3 p-5">
+        <div class="image-container">
+          <img src="graficos/roja.jpg" alt="La agenda roja" >
+          <div class="overlay">
+            <p>La agenda roja</p>
+            <div class="icono-contenedor">
+              <a href="https://www.youtube.com/watch?v=o0p4HDiJoVo&list=LL&index=112" target="_blank"><i class="fa-solid fa-tag fa-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="titulo-container">
+          <button  class="titulo botones btn-outline-custom" >La agenda roja</button>   
+        </div>
+      </div>
+    </div>
+
+    <div class="espacio"></div>
+
+    <div class="row bg-warning">
+      <p>Novelas</p>
+      <div class="col-12 col-md-3 p-5">
+        <div class="image-container">
+          <img src="graficos/azul.jpg" alt="La dama azul" >
+          <div class="overlay">
+            <p>La dama azul</p>
+            <div class="icono-contenedor">
+              <a href="https://www.youtube.com/watch?v=o0p4HDiJoVo&list=LL&index=112" target="_blank"><i class="fa-solid fa-tag fa-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="titulo-container">
+          <button  class="titulo botones btn-outline-custom" >La dama azul</button>   
+        </div>
+      </div>
+      <div class="col-12 col-md-3 p-5">
+        <div class="image-container">
+          <img src="graficos/nieve.jpg" alt="La chica de nieve" >
+          <div class="overlay">
+            <p>La chica de nieve</p>
+            <div class="icono-contenedor">
+              <a href="https://www.youtube.com/watch?v=o0p4HDiJoVo&list=LL&index=112" target="_blank"><i class="fa-solid fa-tag fa-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="titulo-container">
+          <button  class="titulo botones btn-outline-custom" >La chica de nieve</button>   
+        </div>
+      </div>
+      <div class="col-12 col-md-3 p-5">
+        <div class="image-container">
+          <img src="graficos/llora.jpg" alt="No llores" >
+          <div class="overlay">
+            <p>No llores</p>
+            <div class="icono-contenedor">
+              <a href="https://www.youtube.com/watch?v=o0p4HDiJoVo&list=LL&index=112" target="_blank"><i class="fa-solid fa-tag fa-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="titulo-container">
+          <button  class="titulo botones btn-outline-custom" >No llores</button>   
+        </div>
+      </div>
+      <div class="col-12 col-md-3 p-5">
+        <div class="image-container">
+          <img src="graficos/humano.jpg" alt="Inhumano" >
+          <div class="overlay">
+            <p>Inhumano</p>
+            <div class="icono-contenedor">
+              <a href="https://www.youtube.com/watch?v=o0p4HDiJoVo&list=LL&index=112" target="_blank"><i class="fa-solid fa-tag fa-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="titulo-container">
+          <button  class="titulo botones btn-outline-custom" >Inhumano</button>   
+        </div>
+      </div>
+    </div>
+
+    <div class="espacio"></div>
+
+    <div class="row bg-warning">
+      <p>Libros de fantasia</p>
+      <div class="col-12 col-md-3 p-5">
+        <div class="image-container">
+          <img src="graficos/mago.jpg" alt="El cuarto mago" >
+          <div class="overlay">
+            <p>El cuarto mago</p>
+            <div class="icono-contenedor">
+              <a href="https://www.youtube.com/watch?v=o0p4HDiJoVo&list=LL&index=112" target="_blank"><i class="fa-solid fa-tag fa-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="titulo-container">
+          <button  class="titulo botones btn-outline-custom" >El cuarto mago</button>   
+        </div>
+      </div>
+      <div class="col-12 col-md-3 p-5">
+        <div class="image-container">
+          <img src="graficos/trono.jpg" alt="El trono corrompido" >
+          <div class="overlay">
+            <p>El trono corrompido</p>
+            <div class="icono-contenedor">
+              <a href="https://www.youtube.com/watch?v=o0p4HDiJoVo&list=LL&index=112" target="_blank"><i class="fa-solid fa-tag fa-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+          <div class="titulo-container">
+          <button  class="titulo botones btn-outline-custom" >El trono corrompido</button>   
+          </div>
+      </div>
+      <div class="col-12 col-md-3 p-5">
+        <div class="image-container">
+          <img src="graficos/tibecenas.jpg" alt="22 minutos tibecenas" >
+          <div class="overlay">
+            <p>22 minutos tibecenas</p>
+            <div class="icono-contenedor">
+              <a href="https://www.youtube.com/watch?v=o0p4HDiJoVo&list=LL&index=112" target="_blank"><i class="fa-solid fa-tag fa-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="titulo-container">
+          <button  class="titulo botones btn-outline-custom" >22 minutos tibecenas</button>   
+        </div>
+      </div>
+      <div class="col-12 col-md-3 p-5">
+        <div class="image-container">
+          <img src="graficos/anansi.jpg" alt="Los hijos de Amansi" >
+          <div class="overlay">
+            <p>Los hijos de Amansi</p>
+            <div class="icono-contenedor">
+              <a href="https://www.youtube.com/watch?v=o0p4HDiJoVo&list=LL&index=112" target="_blank"><i class="fa-solid fa-tag fa-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="titulo-container">
+          <button  class="titulo botones btn-outline-custom" >Los hijos de Amansi</button>   
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="contactenos seccion-oscura">
+  <div class="container">
+    <div class="row">
+      <div class="col 12 col-md-3">
+                  <br> <br>
+        <div class="imagic-container">
+          <img src="graficos/marca.png" alt="logo" width="200px">
+        </div>
+        <div class="texto-container">
+          <p>Siguenos en nuestras redes sociales</p>
+          <div class="iconos-redes-sociales">
+            <a href="https://twitter.com/home" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-twitter fa-2xl ms-10"></i>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-github fa-2xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin fa-2xl"></i>
+            </a>
+            <a href="https://www.instagram.com/leomessi/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-instagram fa-2xl"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-facebook fa-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col 12 col-md-3">
+          <div class="texto-container">
+            <h5>Sobre nosotros</h5>
+            <p>Quienes somos</p>
+                   <br>
+            <h5>Politicas</h5>
+            <p class="parrafos">Politicas de privacidad</p>
+            <p class="parrafos">Terminos y condiciones</p>
+               <p class="parrafos">Recojo en tienda</p>
+            <p class="parrafos">Preguntas frecuentes</p>
+          </div>
+          <div class="imagic-container">
+            <img src="graficos/reclamo.png" alt="libro de reclamaciones" >
+          </div>
+      </div>
+      <div class="col 12 col-md-3">
+        <div class="espacio-personalizado"></div>
+           <div class="texto-container">
+            <h5>Contactanos</h5>
+            <p>Atención al cliente</p>
+            <p class="parrafos"> (01) 644-9191 </p>
+            <p class="parrafos">(llamadas y whatsApp)</p>
+            <p class="parrafos">(Lun-Sab 8a.m. a 8p.m.)</p>
+            <p class="parrafos">AtencionSarita@.com.pe</p>
+            <p class="parrafos">Comprobante Electrónico</p>
+
+           </div>
+      </div>
+      <div class="col 12 col-md-3 ">
+            <br> <br>
+         <div class="texto-container">
+            <h5>Mi cuenta</h5>
+            <p class="parrafos">Mis pedidos</p>
+            <p class="parrafos">Mis deseos</p>
+                    <br>
+            <h5>Medios de pagos</h5>
+
+            <div class="pago-container">
+              
+                <i class="fa-brands fa-cc-visa fa-2xl"></i>
+                <i class="fa-brands fa-cc-mastercard fa-2xl"></i>
+                <i class="fa-brands fa-cc-amex fa-2xl "></i>
+                <i class="fa-brands fa-cc-diners-club fa-2xl "></i>
+            </div>         
+          </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+  <div class="derechos-de-autor">Creado por Sarita Colonia SAC (2022) &#169;</div>
+</footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

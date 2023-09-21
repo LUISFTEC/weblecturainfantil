@@ -1,0 +1,268 @@
+/* todo lo referente al contador */
+#contador{
+    display: inline-block;    /*permite que no ocupe el elemento todo el ancho disponible*/
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;     /*permite el redondeo de bordes*/
+    background-color:rgb(0, 106, 255);      /*color de fondo*/                      
+    text-align: center;
+    line-height: 25px;
+    position: absolute; /*libertad de movimiento dentro del contenedor*/
+    color: white;
+    top: 50%;                     /*linea12-linea14 junto con la linea 10 permite la movilidad del elemento */
+    right: 0;
+    transform: translate(50%,-50%);
+  }
+  
+  .btn-custom {
+    color: black;
+    background-color: white;
+  }
+   .btn-custom:hover {
+    color: white;
+    background-color: blue;
+   }
+  
+  #menu .form-control{
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  #menu{
+    display: flex;
+    justify-content: center;
+  }
+  
+  #menu .d-flex{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .btn-primary{
+    flex-shrink: 0;
+  }
+  
+  #menu #carrito{
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  @media (max-width: 576px) {
+    #menu #carrito {
+      flex-direction: column;
+      align-items: flex-start;
+     
+    }
+  
+    #contador {
+      position: relative;
+      top: unset;
+      left: unset;
+      transform: unset;
+      margin-left:31px;
+      margin-top: -31px;
+    }
+  
+    .header-icon {
+      display: none;
+    }
+  
+    .categori {
+     
+      justify-content: flex-start;
+      padding: 10px;
+    }
+  
+    .botones {
+      margin-right: 10px;
+    }
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-icon {
+    margin-right: 5px;
+    margin-bottom: -4px;
+    color: white;
+  }
+  
+  .header-text {
+    font-size: 1.2rem;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+   .botones{
+    padding: 0.5rem 2.6rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+    background-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .botones.btn-outline-custom {
+    color: black;
+    border: 1px solid transparent;
+  }
+  
+  
+  .botones.btn-outline-custom:hover {
+    background-color: rgba(25, 128, 255);
+    color: white;
+  }
+  
+  .categori{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    overflow-x: auto;
+    flex-wrap: wrap;
+  }
+  
+  .seccion-clara{
+    color: black;
+    background-color: white;
+  }
+  
+  .libros{
+    padding: 40px;
+    
+  }
+  
+  .libros .row {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+  }
+  
+  .libros .row > div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Alinea el texto al centro horizontalmente */
+    border: 20px solid rgba(25, 128, 255);
+  }
+  
+    .libros .row > div > * {
+      border: none;
+    }
+  
+  .titulo {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+  }
+  
+  .espacio{
+    margin-bottom: 40px;
+  }
+  
+  .overlay{
+    transition: all 0.2s ease ;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  
+  .overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 10px;
+  }
+  
+  .image-container:hover .overlay{                                  /*hace opaca las imagenes y permite eso que haya letras(190-207)*/
+    opacity: 1;
+  }
+  
+  .image-container:hover img{
+    opacity: 0.2;
+  }
+  
+  .image-container{
+    position: relative;
+  }
+  
+  body {
+    overflow-x: hidden;
+    
+  }
+  
+  .seccion-oscura{
+    color:black;
+    background-color:rgb(25, 86, 255) ;
+  
+  }
+  
+  .contactenos .row div{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .contactenos .row{
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .contactenos .texto-container p{
+    color: black;
+    font-size: 16px;
+  }
+  
+  .iconos-redes-sociales i{
+    color: black;
+    
+  }
+   
+  .contactenos .texto-container .parrafos{
+    font-size: 15px;
+    margin: 0;
+    font-weight: bolder;
+  }
+  
+  .contactenos .pago-container i{
+    padding: 18px;
+  }
+  
+  .espacio-personalizado{
+    margin-bottom: 18px;
+  }
+  
+  footer{
+    border-top: 0.1px;
+    border-color: black;
+    border-style: solid;
+    
+  }
+  
+  footer .derechos-de-autor{
+    font-size: 20px;
+    font-weight: bolder;
+  
+  }
