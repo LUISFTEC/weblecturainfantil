@@ -1,8 +1,14 @@
 /* Estilos para centrar el contenido en la página de Canciones */
 .canciones-section {
     text-align: center; /* Centra el contenido en horizontal */
-    max-width: 800px; /* Limita el ancho máximo del contenido para que no se extienda demasiado en pantallas grandes */
+    max-width: 1200px; /* Limita el ancho máximo del contenido para que no se extienda demasiado en pantallas grandes */
     margin: 0 auto; /* Centra el contenido horizontalmente en el centro de la pantalla */
+    margin-bottom: 0; /* Elimina el margen inferior de la primera sección */
+    text-align: justify;
+  }
+  .canciones-section h1 {
+    border-bottom: 2px solid #2e9fe6; /* Agrega una línea de 2 píxeles de grosor y color negro debajo del título */
+    padding-bottom: 10px; /* Opcional: Agrega espacio entre el título y la línea */
   }
   
   /* Estilo para la imagen principal */
@@ -11,30 +17,104 @@
     height: auto; /* Mantiene la proporción de la imagen */
   }
   
-  /* Estilos para el título y el párrafo */
-  .canciones-section h1,
-  .canciones-section p {
-    margin: 20px 0; /* Espacio vertical alrededor del título y el párrafo */
-    text-align: justify; /* Justifica el texto del párrafo */
+  #proyecto {
+    max-width: 1200px;
+    margin: auto;
   }
   
-  /* Estilos para las imágenes de las canciones */
-  .fila {
-    display: flex; /* Crea una fila horizontal con las imágenes */
-    justify-content: center; /* Centra las imágenes horizontalmente en la fila */
-    flex-wrap: wrap; /* Permite que las imágenes se envuelvan a la siguiente línea si no caben en pantalla */
-    margin-top: 20px; /* Espacio superior entre la descripción y las imágenes */
+  #proyecto .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: none;
+    color: #ffffff;
+  
+    text-decoration-thickness: 5px;
   }
   
-  .fila a {
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    margin: 10px; /* Espacio entre las imágenes */
-    flex: 1; /* Distribuye el espacio disponible entre las imágenes de manera equitativa */
-    max-width: calc(25% - 20px); /* Limita el ancho máximo de cada imagen al 25% del contenedor menos el espacio entre ellas */
+  #proyecto .fila {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    
   }
   
-  .fila img {
-    max-width: 100%; /* Ajusta el ancho máximo de las imágenes al 100% del contenedor */
-    height: auto; /* Mantiene la proporción de las imágenes */
+  #proyecto .fila .proyecto0 {
+    max-width: 450px;
+    border: 1px solid #000;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
   }
   
+  #proyecto .fila .proyecto0 img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 0.5s;
+  }
+  
+  #proyecto .fila .proyecto0:hover img {
+    filter: grayscale(0);
+  }
+  
+  #proyecto .fila .proyecto0 .info {
+    position: absolute;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fcfcfc;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: 0.5s;
+  }
+  
+  #proyecto .fila .proyecto0:hover .info {
+    opacity: 1;
+    bottom: 0;
+  }
+
+  #proyecto .fila:last-child {
+    border-bottom: 2px solid #2e9fe6; /* Agrega una línea al final de la última fila */
+  }
+
+  #proyecto .fila:last-child .proyecto0 {
+    margin-bottom: 20px; /* Agrega un margen inferior al último elemento de la última fila */
+  }
+  
+  
+
+  /* Estilo para las imágenes de las filas */
+.fila img {
+  max-width: 100%; /* Ajusta el ancho máximo de las imágenes al 100% del contenedor */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  border: 2px solid #333; /* Agregar un borde de 2px de ancho y color gris (#333) */ 
+  border-radius: 10px; /* Esto hará que las imágenes sean redondeadas */
+  transition: transform 0.3s; /* Agrega una transición suave para el efecto de zoom */
+}
+
+/* Aplica el efecto de zoom al pasar el cursor sobre las imágenes */
+.fila img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen en un 10% al pasar el cursor */
+}
+
+  /* Estilo para las imágenes de las filas */
+.fila .proyecto0 {
+  max-width: 450px;
+  border: 2px solid #333; /* Agregar un borde de 2px de ancho y color gris (#333) */ 
+  border-radius: 10px; /* Esto hará que las imágenes y su contenedor sean redondeados */
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+/* Aplica el efecto de zoom al pasar el cursor sobre las imágenes */
+.fila .proyecto0:hover img {
+  filter: grayscale(0);
+}
+
+  
+
+

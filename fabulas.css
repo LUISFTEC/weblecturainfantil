@@ -1,140 +1,260 @@
 /* Estilos CSS para el encabezado */
 header {
-    background-color: #007BFF; /* Cambia el color de fondo según tus preferencias */
-    color: #fff; /* Cambia el color del texto del encabezado según tus preferencias */
-    padding: 10px;
-    text-align: center;
-    margin: 0; /* Elimina el margen predeterminado */
-    top: 0; /* Asegura que el encabezado esté en la parte superior */
-    font-family: Arial, sans-serif; /* Cambia la fuente según tus preferencias */
-    font-size: 18px; /* Cambia el tamaño de la fuente según tus preferencias */
-    width: 100%; /* Establece el ancho al 100% para que ocupe toda la pantalla */
-    position: flex; /* Fija el encabezado en la parte superior de la pantalla */
-    justify-content: center;
-  }
+  background-color: #007BFF; /* Cambia el color de fondo según tus preferencias */
+  color: #fff; /* Cambia el color del texto del encabezado según tus preferencias */
+  padding: 10px;
+  text-align: center;
+  margin: 0; /* Elimina el margen predeterminado */
+  top: 0; /* Asegura que el encabezado esté en la parte superior */
+  font-family: Arial, sans-serif; /* Cambia la fuente según tus preferencias */
+  font-size: 18px; /* Cambia el tamaño de la fuente según tus preferencias */
+  width: 100%; /* Establece el ancho al 100% para que ocupe toda la pantalla */
+  position: flex; /* Fija el encabezado en la parte superior de la pantalla */
+  justify-content: center;
+}
+
+/* Estilos CSS para los botones de navegación */
+nav ul {
+  list-style-type: none;
+  padding: 0;
   
-  /* Estilos CSS para los botones de navegación */
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 50px;
-  }
-  
-  .nav-button {
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #fff; /* Cambia el color del texto de los botones según tus preferencias */
-    background-color: #FF5733; /* Cambia el color de fondo del botón según tus preferencias */
-  }
-  
-  /* Estilos CSS para el logo */
-  .logo {
-    float: left;
-    max-width: 200px; /* Ajusta el valor según tus necesidades */
-    margin-left: 20px; /* Ajusta el margen izquierdo según tus necesidades */
-    margin-top: -2px; /* Ajusta el margen superior para mover el logo hacia arriba */
-    /* Puedes agregar estilos adicionales para el logo aquí */
-  }
-  
-  .logo img {
-    width: 45px; /* Ajusta el ancho de la imagen según tus necesidades */
-    height: auto;
-  }
-  
-  /* Estilos CSS para los enlaces en la navegación */
-  nav a {
-    text-decoration: none;
-    color: #fff; /* Cambia el color de los enlaces según tus preferencias */
-    font-weight: bold; /* Añade negrita para hacer el texto más legible */
-  }
-  
-  /* Estilos CSS para los enlaces al pasar el mouse por encima (efecto hover) */
-  nav a:hover {
-    color: #000000; /* Cambia el color al pasar el mouse por encima según tus preferencias */
-  }
- 
-  /* Estilos para los iconos de redes sociales */
-  .nav ul li a i {
-    font-size: 24px; /* Tamaño de fuente de los iconos */
-    margin-right: 10px; /* Espacio entre los iconos y los enlaces */
-    color: #007BFF; /* Color de los iconos (puedes cambiarlo según tus preferencias) */
-    transition: color 0.3s ease; /* Transición de color suave al pasar el mouse por encima */
-  }
-  
-  /* Estilos para los iconos de redes sociales al pasar el mouse por encima */
-  .nav ul li a i:hover {
-    color: #d24300; /* Cambia el color al pasar el mouse por encima (puedes cambiarlo según tus preferencias) */
-  }
-  /* Estilos para el footer */
-  .footer {
-    background-color: #333; /* Cambia el color de fondo según tu preferencia */
-    color: #fff; /* Cambia el color del texto según tu preferencia */
-    padding: 40px 0; /* Espaciado interno superior e inferior */
-  }
-  
-  .footer h4 {
-    font-size: 18px;
-  }
-  
-  .footer p {
-    font-size: 14px;
-  }
-  
-  .footer ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer ul li {
-    margin-bottom: 10px;
-  }
-  
-  .social-icons {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .social-icons li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  .social-icons a {
-    color: #fff; /* Cambia el color de los iconos según tu preferencia */
-    font-size: 24px;
-    text-decoration: none;
-  }
-  
-  /* Estilos para el texto de derechos de autor */
-  .footer p.text-center {
-    margin-top: 20px;
-    font-size: 12px;
-  }
-  
-  /* Cambia el color del enlace en el footer */
-  .footer a {
-    color: #fff; /* Cambia el color de los enlaces según tu preferencia */
-    text-decoration: none;
-  }
-  
-  /* Estilos para los enlaces en el hover */
-  .footer a:hover {
-    text-decoration: underline;
-  }
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 50px;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff; /* Cambia el color del texto de los botones según tus preferencias */
+  background-color: #FF5733; /* Cambia el color de fondo del botón según tus preferencias */
+}
+
+/* Estilos CSS para el logo */
+.logo {
+  float: left;
+  max-width: 200px; /* Ajusta el valor según tus necesidades */
+  margin-left: 20px; /* Ajusta el margen izquierdo según tus necesidades */
+  margin-top: -2px; /* Ajusta el margen superior para mover el logo hacia arriba */
+  /* Puedes agregar estilos adicionales para el logo aquí */
+}
+
+.logo img {
+  width: 45px; /* Ajusta el ancho de la imagen según tus necesidades */
+  height: auto;
+}
+
+/* Estilos CSS para los enlaces en la navegación */
+nav a {
+  text-decoration: none;
+  color: #fff; /* Cambia el color de los enlaces según tus preferencias */
+  font-weight: bold; /* Añade negrita para hacer el texto más legible */
+}
+
+/* Estilos CSS para los enlaces al pasar el mouse por encima (efecto hover) */
+nav a:hover {
+  color: #000000; /* Cambia el color al pasar el mouse por encima según tus preferencias */
+}
+
+/* Estilos para los iconos de redes sociales */
+.nav ul li a i {
+  font-size: 24px; /* Tamaño de fuente de los iconos */
+  margin-right: 10px; /* Espacio entre los iconos y los enlaces */
+  color: #007BFF; /* Color de los iconos (puedes cambiarlo según tus preferencias) */
+  transition: color 0.3s ease; /* Transición de color suave al pasar el mouse por encima */
+}
+
+/* Estilos para los iconos de redes sociales al pasar el mouse por encima */
+.nav ul li a i:hover {
+  color: #d24300; /* Cambia el color al pasar el mouse por encima (puedes cambiarlo según tus preferencias) */
+}
+/* Estilos para el footer */
+.footer {
+  background-color: #333; /* Cambia el color de fondo según tu preferencia */
+  color: #fff; /* Cambia el color del texto según tu preferencia */
+  padding: 40px 0; /* Espaciado interno superior e inferior */
+}
+
+.footer h4 {
+  font-size: 18px;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #fff; /* Cambia el color de los iconos según tu preferencia */
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Estilos para el texto de derechos de autor */
+.footer p.text-center {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+/* Cambia el color del enlace en el footer */
+.footer a {
+  color: #fff; /* Cambia el color de los enlaces según tu preferencia */
+  text-decoration: none;
+}
+
+/* Estilos para los enlaces en el hover */
+.footer a:hover {
+  text-decoration: underline;
+}
 
 .fabu{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-height:calc(100% - 200px) ;
-    background-color: aqua;
-    padding: 0 400px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height:400px;
+  padding: 0 400px;
+  position: relative;
+}
+
+.fabu .fb{
+overflow: hidden;
+width: 16rem;
+height: 240px;
+}
+
+.modi{
+transition: transform 0.3s ease;
+}
+
+.img-container{
+overflow: hidden;
+}
+
+.img-container:hover .modi{
+transform: scale(1.1);
+}
+
+.fb .card-body{
+background-color: #007BFF;
+color: #fff;
+text-align: center;
+font-weight: bold;
+font-size: 20px;
+}
+
+.fabu .carta1{
+position: absolute;
+left: 36%;
+bottom: 0px;
+}
+
+.fabu .carta2{
+position: absolute;
+bottom: 0;
+left: 51%;
+}
+
+.fabu .carta3{
+position: absolute;
+bottom: 0;
+left: 66%;
+}
+
+.fabu .carta5{
+position: absolute;
+bottom: 264px;
+left: 36%;
+}
+
+.fabu .carta6{
+position: absolute;
+bottom: 264px;
+left: 51%;
+}
+
+.fabu .carta7{
+position: absolute;
+bottom: 264px;
+left: 66%;
+}
+
+.fabu2{
+display: flex;
+align-items: center;
+width: 100%;
+padding: 0 400px;
+position: relative;
+justify-content: center;
 
 }
 
+.fabu2 hr{
 
+  height: 3px; 
+  background-color:black; 
+  border: none; 
+  margin: 20px 0; 
+  width: 1100px;
+}
+
+.fabu2 .unico{
+font-family: 'Young Serif', serif;
+}
+
+.fabu3{
+display: flex;
+align-items: center;
+width: 100%;
+padding: 0 500px;
+position: relative;
+}
+
+.fabu3 .fb{
+  overflow: hidden;
+  width: 16rem;
+  height: 240px;
+}
+
+.fabu3 .carta9{
+position: absolute;
+bottom:0;
+left:43%;
+}
+
+.fabu3 .carta10{
+position: absolute;
+bottom: 0;
+left: 60%;
+}
+
+.elegido{
+padding: 0 400px;
+}
+
+.elegido hr{
+height: 3px; 
+background-color:black; 
+border: none; 
+margin: 20px 0; 
+width: 1100px;
+}
