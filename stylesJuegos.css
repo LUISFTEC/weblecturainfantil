@@ -1,0 +1,41 @@
+/* Estilos para centrar el contenido en la página de Canciones */
+.juegos-section {
+    text-align: center; /* Centra el contenido en horizontal */
+    max-width: 800px; /* Limita el ancho máximo del contenido para que no se extienda demasiado en pantallas grandes */
+    margin: 0 auto; /* Centra el contenido horizontalmente en el centro de la pantalla */
+  }
+  
+  /* Estilo para la imagen principal */
+  .juegos-section img {
+    max-width: 85%; /* Ajusta la imagen principal al ancho de su contenedor */
+    height: 100; /* Mantiene la proporción de la imagen */
+  }
+  
+  /* Estilos para el título y el párrafo */
+  .juegos-section h1,
+  .juegos-section p {
+    margin: 20px 0; /* Espacio vertical alrededor del título y el párrafo */
+    text-align: justify; /* Justifica el texto del párrafo */
+  }
+  
+  /* Estilos para las imágenes de los juegos */
+  .fila {
+    display: flex; /* Crea una fila horizontal con las imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente en la fila */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan a la siguiente línea si no caben en pantalla */
+    margin-top: 0px; /* Espacio superior entre la descripción y las imágenes */
+  }
+  
+  .fila a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin: 10px; /* Espacio entre las imágenes */
+    flex: 1; /* Distribuye el espacio disponible entre las imágenes de manera equitativa */
+    max-width: calc(25% - 20px);   /* Limita el ancho máximo de cada imagen al 25% del contenedor menos el espacio entre ellas*/
+  }
+  
+  .fila img {
+    max-width: 390%; /* La imagen se ajustará automáticamente al ancho del contenedor padre */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
+    width: 85px; /* Aumenta el ancho a 200 píxeles (puedes ajustar este valor según tus preferencias) */
+}
+  
