@@ -1,21 +1,27 @@
-/* Estilos para centrar el contenido en la página de Canciones */
+/* Estilos para centrar el contenido en la página de juegos */
 .juegos-section {
     text-align: center; /* Centra el contenido en horizontal */
-    max-width: 800px; /* Limita el ancho máximo del contenido para que no se extienda demasiado en pantallas grandes */
+    max-width: 1300px; /* Limita el ancho máximo del contenido para que no se extienda demasiado en pantallas grandes */
     margin: 0 auto; /* Centra el contenido horizontalmente en el centro de la pantalla */
   }
   
   /* Estilo para la imagen principal */
   .juegos-section img {
-    max-width: 85%; /* Ajusta la imagen principal al ancho de su contenedor */
+    max-width: 70%; /* Ajusta la imagen principal al ancho de su contenedor */
     height: 100; /* Mantiene la proporción de la imagen */
   }
   
   /* Estilos para el título y el párrafo */
-  .juegos-section h1,
+  .juegos-section h1{
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 55px; /* Tamaño de fuente (ajusta según tus preferencias) */
+    color: #718bff; /* Color de texto (ajusta según tus preferencias) */
+    font-family: 'Nunito', sans-serif; /* Cambia la fuente a Nunito (reemplaza con la fuente que prefieras) */
+  }
   .juegos-section p {
-    margin: 20px 0; /* Espacio vertical alrededor del título y el párrafo */
-    text-align: justify; /* Justifica el texto del párrafo */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 25px; /* Tamaño de fuente (ajusta según tus preferencias) */
+    color: #067b9f; /* Color de texto (ajusta según tus preferencias) */
   }
   
   /* Estilos para las imágenes de los juegos */
@@ -28,14 +34,30 @@
   
   .fila a {
     text-decoration: none; /* Quita el subrayado de los enlaces */
-    margin: 10px; /* Espacio entre las imágenes */
+    margin: 30px; /* Espacio entre las imágenes */
     flex: 1; /* Distribuye el espacio disponible entre las imágenes de manera equitativa */
-    max-width: calc(25% - 20px);   /* Limita el ancho máximo de cada imagen al 25% del contenedor menos el espacio entre ellas*/
+    max-width: calc(35% - 25px);   /* Limita el ancho máximo de cada imagen al 25% del contenedor menos el espacio entre ellas*/
   }
   
   .fila img {
-    max-width: 390%; /* La imagen se ajustará automáticamente al ancho del contenedor padre */
+    max-width: 280%; /* La imagen se ajustará automáticamente al ancho del contenedor padre */
     height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
-    width: 85px; /* Aumenta el ancho a 200 píxeles (puedes ajustar este valor según tus preferencias) */
+    width: 75px; /* Aumenta el ancho a 200 píxeles (puedes ajustar este valor según tus preferencias) */
+    border-radius: 10px; /* Redondea los bordes de las imágenes */
+  }
+  /* Agrega estilos para las imágenes que se agrandarán en hover */
+  .zoom-image {
+    transition: transform 0.3s; /* Agregar una transición suave */
 }
-  
+
+/* Aplicar escala 1.1 (un 10% más grande) en hover */
+.zoom-image:hover {
+    transform: scale(1.4);
+}
+
+.col-md-3 h2 {
+  color: #240b78
+}
+.small-text {
+  font-size: 20px; /* Puedes ajustar el tamaño según tus preferencias */
+}
