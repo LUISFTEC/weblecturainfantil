@@ -1,7 +1,6 @@
 /* Estilos para centrar el contenido en la página de Canciones */
 .canciones-section {
     text-align: center; /* Centra el contenido en horizontal */
-    max-width: 1200px; /* Limita el ancho máximo del contenido para que no se extienda demasiado en pantallas grandes */
     margin: 0 auto; /* Centra el contenido horizontalmente en el centro de la pantalla */
     margin-bottom: 0; /* Elimina el margen inferior de la primera sección */
     text-align: justify;
@@ -17,6 +16,11 @@
     height: auto; /* Mantiene la proporción de la imagen */
   }
   
+  .canciones-section h1,
+.canciones-section p {
+  max-width: 1200px;
+  margin: 0 auto; /* Esto centrará la imagen y el texto horizontalmente */
+}
   #proyecto {
     max-width: 1200px;
     margin: auto;
@@ -34,7 +38,7 @@
   #proyecto .fila {
     display: flex;
     justify-content: space-between;
-    margin: 30px 0;
+    margin: 10px 0;
     
   }
   
@@ -115,6 +119,43 @@
   filter: grayscale(0);
 }
 
-  
+/* Estilos para las imágenes de las filas */
+.fila .proyecto0 img {
+  width: 100%; /* Asegura que las imágenes se ajusten al ancho de su contenedor */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  filter: grayscale(1);
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+/* Aplica el efecto de zoom al pasar el cursor sobre las imágenes */
+.fila .proyecto0 img:hover {
+  filter: grayscale(0);
+}
+
+
+
+/* Media Query para pantallas más pequeñas (por ejemplo, anchura máxima de 768px) */
+@media (max-width: 858px) {
+  .fila {
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    align-items: center; /* Centra los elementos horizontalmente en el centro de la pantalla */
+  }
+  #proyecto .fila .proyecto0 {
+    margin-bottom: 10px; /* Agrega un margen inferior de 20px a todos los elementos .proyecto0 en pantallas pequeñas */
+    text-align: center; /* Centra el contenido de cada proyecto */
+  }
+  .fila:last-child {
+    margin-bottom: 10px; /* Reduzco el margen inferior a 10px en pantallas pequeñas */
+  }
+  .canciones-section p {
+    margin: 0 20px; /* Agrega un margen de 20px a los lados del párrafo en pantallas pequeñas */
+  }
+  .canciones-section h1 {
+    margin: 0 20px; /* Agrega un margen de 20px a los lados del título en pantallas pequeñas */
+  }
+
+}
+
 
 
