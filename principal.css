@@ -1,165 +1,218 @@
 *{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 nav{
-    background: #007BFF;
-    height: 80px;
-    width: 100%;
+  background: #049339;
+  height: 80px;
+  width: 100%;
 }
 .enlace{
-    position: absolute;
-    padding: 20px 50px;
+  position: absolute;
+  padding: 20px 50px;
 }
 .logo{
-    height: 40px;
+  height: 40px;
 }
 
 ul {
-    z-index: 1000; /* Asegura que el menú esté en la parte superior de la pila de elementos */
+  z-index: 1000; /* Asegura que el menú esté en la parte superior de la pila de elementos */
 }
 
 nav ul{
-    float: right;
-    margin-right: 20px;
+  float: right;
+  margin-right: 20px;
 }
 nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  font-weight: bold;
+
 }
 nav ul li a{
-    color: #fff;
-    font-size: 18px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  transition: color 0.5s;
 }
-nav ul li a.active, nav ul li a:hover {
-    color: #000; /* Cambia el color de la letra al hacer hover en el menú */
-    transition: .5s;
+nav ul li a:hover,
+nav ul li a:active {
+    color: #000;
 }
 
 .checkbtn{
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 }
 #check{
-    display: none;
+  display: none;
 }
 
 /* Estilos para el footer */
 .footer {
-    background-color: #333; /* Cambia el color de fondo según tu preferencia */
-    color: #fff; /* Cambia el color del texto según tu preferencia */
-    padding: 20px 0; /* Espaciado interno superior e inferior */
-    
-  }
+  background-color: #333; /* Cambia el color de fondo según tu preferencia */
+  color: #fff; /* Cambia el color del texto según tu preferencia */
+  padding: 20px 0; /* Espaciado interno superior e inferior */
   
-  .footer h4 {
-    font-size: 18px;
-  }
-  
-  .footer p {
-    font-size: 14px;
-  }
-  
-  .footer ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer ul li {
-    margin-bottom: 10px;
-  }
-  
-  .social-icons {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .social-icons li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  .social-icons a {
-    color: #fff; /* Cambia el color de los iconos según tu preferencia */
-    font-size: 24px;
-    text-decoration: none;
-  }
-  
-  /* Estilos para el texto de derechos de autor */
-  .footer p.text-center {
-    margin-top: 20px;
-    font-size: 12px;
-  }
-  
-  /* Cambia el color del enlace en el footer */
-  .footer a {
-    color: #fff; /* Cambia el color de los enlaces según tu preferencia */
-    text-decoration: none;
-  }
-  
-  /* Estilos para los enlaces en el hover */
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
-  
+}
+
+.footer h4 {
+  font-size: 18px;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+/* Facebook */
+.fab.fa-facebook {
+  color: #1877F2;
+}
+
+/* Twitter */
+.fab.fa-twitter {
+  color: #1DA1F2;
+}
+
+/* Instagram */
+.fab.fa-instagram {
+  color: #C13584;
+}
+
+/* LinkedIn */
+.fab.fa-linkedin {
+  color: #0077B5;
+}
+
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #fff; /* Cambia el color de los iconos según tu preferencia */
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Estilos para el texto de derechos de autor */
+.footer p.text-center {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+/* Cambia el color del enlace en el footer */
+.footer a {
+  color: #fff; /* Cambia el color de los enlaces según tu preferencia */
+  text-decoration: none;
+}
+
+/* Estilos para los enlaces en el hover */
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+.top-bar {
+  background-image: url(imgPrincipal/banner.png); /* Color de fondo */
+  padding: 10px 20px; /* Espaciado interno */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.logo1 img {
+  max-width: 80px; /* Ancho máximo de la imagen del logo */
+}
+
+.right-content .button {
+  color: #ffffff; /* Color del texto del botón */
+  text-decoration: none; /* Elimina el subrayado del botón */
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
 
 @media (max-width: 952px){
-    .enlace{
-        padding-left: 20px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
+  .top-bar {
+    display: none;
+  }
+
+  .enlace{
+      padding-left: 20px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
 }
 
 @media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    #menu {
-        position: fixed;
-        width: 50%;
-        height: 100vh;
-        background: #333;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
+  .checkbtn{
+      display: block;
+  }
+  #menu {
+      position: fixed;
+      width: 75%;
+      height: 100vh;
+      background: #333;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
 
-    #menu li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
+  #menu li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
 
-    #menu li a {
-        font-size: 20px;
-    }
+  #menu li a {
+      font-size: 20px;
+  }
 
-    li a:hover,
-    li a.active {
-        background: none;
-        color: black;
-    }
+  li a:hover,
+  li a.active {
+      background: none;
+      color: black;
+  }
 
-    #check:checked ~ #menu {
-        left: 0;
-    }
-    
+  #check:checked ~ #menu {
+      left: 0;
+  }
+  
 }
