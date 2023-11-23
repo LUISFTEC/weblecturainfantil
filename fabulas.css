@@ -4,7 +4,7 @@
   text-align: center; /* Centra el contenido en forma horizontal */
   margin: 0 auto; /* Centra el contenido horizontalmente en el centro de la pantalla */
   margin-bottom: 0; /* Elimina el margen inferior de esta section */
-  text-align: justify; /*La letra se adapta al tamaño de pantalla que se le pone*/
+   /*La letra se adapta al tamaño de pantalla que se le pone*/
 }
 
 .fabulas-section h2,
@@ -12,6 +12,7 @@
 .fabulas-section p {
   max-width: 1200px; /*Tamaño maximo que se le esta dando a las letras evitando su posible desborde*/
   margin: 0 auto; /* Esto centrará la imagen y el texto horizontalmente */
+  text-align: justify;
 }
 
 /*fabu*/
@@ -23,9 +24,9 @@
 
 #fabulas .apartado {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   margin: 10px 0;
-    
+  
 }
 
 #fabulas .apartado .fabu {
@@ -38,7 +39,7 @@
 }
 
 #fabulas .apartado .fabu img {
-  width: 100%;
+  width: 250px;
   height: auto;
   filter: grayscale(1);
   object-fit: cover;
@@ -135,7 +136,21 @@
   margin-bottom: 20px;
 }
 
+/* cortas */
 
+.fabulas-section img {
+  max-width: 100%; /* Ajusta la imagen principal al ancho de su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  padding: 15px;
+  
+}
+
+.fabulas-section #fabulas .unico{
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
 
 @media screen and (max-width:1024px){
 .fabulas-section p ,

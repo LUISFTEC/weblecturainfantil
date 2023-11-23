@@ -1,9 +1,8 @@
 /* Estilos para centrar el contenido en la página de Canciones */
 .canciones-section {
-    text-align: center; /* Centra el contenido en horizontal */
     margin: 0 auto; /* Centra el contenido horizontalmente en el centro de la pantalla */
     margin-bottom: 0; /* Elimina el margen inferior de la primera sección */
-    text-align: justify;
+    text-align:justify;
   }
   .canciones-section h1 {
     border-bottom: 2px solid #2e9fe6; /* Agrega una línea de 2 píxeles de grosor y color negro debajo del título */
