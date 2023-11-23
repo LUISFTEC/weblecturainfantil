@@ -141,7 +141,6 @@
 .fabulas-section img {
   max-width: 100%; /* Ajusta la imagen principal al ancho de su contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
-  padding: 15px;
   
 }
 
@@ -151,6 +150,27 @@
   justify-content: center;
   margin: 30px 0;
 }
+
+/*uva*/
+.fabulas-section .ok{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.fabulas-section .verde{
+  padding: 14px;
+  width: 250px;
+  font-family: 'Young Serif', serif ;
+  font-size: 18px;
+}
+
+.fondo{
+  background-image: url(imagenes/fondo.jpg);
+  background-position:top;
+  background-repeat: no-repeat ;
+  background-size: cover;
+}
+
 
 @media screen and (max-width:1024px){
 .fabulas-section p ,
