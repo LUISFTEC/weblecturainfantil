@@ -17,11 +17,11 @@
   font-size: 1.2em; /* Tamaño ligeramente más grande para fácil lectura */
   line-height: 1.6; /* Espaciado entre líneas para mejorar legibilidad */
   color: #333333; /* Color oscuro para contraste pero no tan fuerte como el negro puro */
-  max-width: 80%; /* Limita el ancho para facilitar la lectura */
   margin: 0 auto; /* Centra el texto */
   margin-bottom: 30px; /* Espacio debajo del párrafo */
   max-width: 1200px;
   text-align: justify;
+  margin: auto;
 }
 
 /* Línea separadora */
@@ -86,6 +86,11 @@
   .proyecto0 {
     width: calc(50% - 20px); /* Dos elementos por fila en pantallas medianas */
   }
+  .canciones-section p {
+     /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    margin: 0 40px; /* Reduce el margen en los lados */
+  }
+
 }
 
 @media screen and (max-width: 768px) {
