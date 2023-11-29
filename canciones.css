@@ -1,27 +1,43 @@
 .canciones-section img {
   width: 100%;
-  height: auto; /* Mantiene la proporción de la imagen */
-  display: block; /* Esto asegura que la imagen se muestre en su propia línea */
-  margin: auto; /* Centra la imagen si es más pequeña que el contenedor */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+  display: block;
+  /* Esto asegura que la imagen se muestre en su propia línea */
+  margin: auto;
+  /* Centra la imagen si es más pequeña que el contenedor */
 }
+
 .canciones-section h1 {
-  font-size: 2.5em; /* Tamaño más grande para mayor impacto */
-  font-weight: bold; /* Negrita para destacar */
-  color: #2d2f31; /* Un color oscuro para contraste */
+  font-size: 2.5em;
+  /* Tamaño más grande para mayor impacto */
+  font-weight: bold;
+  /* Negrita para destacar */
+  color: #2d2f31;
+  /* Un color oscuro para contraste */
   margin-bottom: 20px;
-  text-align: center; /* Centrado para atraer la atención */
-  padding: 20px 0; /* Espacio arriba y abajo para no sentirse apretado */
+  text-align: center;
+  /* Centrado para atraer la atención */
+  padding: 20px 0;
 }
 
 .canciones-section p {
-  font-size: 1.2em; /* Tamaño ligeramente más grande para fácil lectura */
-  line-height: 1.6; /* Espaciado entre líneas para mejorar legibilidad */
-  color: #333333; /* Color oscuro para contraste pero no tan fuerte como el negro puro */
-  margin: 0 auto; /* Centra el texto */
-  margin-bottom: 30px; /* Espacio debajo del párrafo */
+  font-size: 1.2em;
+  /* Tamaño ligeramente más grande para fácil lectura */
+  line-height: 1.6;
+  /* Espaciado entre líneas para mejorar legibilidad */
+  color: #333333;
+  /* Color oscuro para contraste pero no tan fuerte como el negro puro */
+  margin: 0 auto;
+  /* Centra el texto */
+  margin-bottom: 30px;
+  /* Espacio debajo del párrafo */
   max-width: 1200px;
   text-align: justify;
-  margin: auto;
+  margin: 20px;
+  margin-left: auto; /* Centrado horizontal */
+  margin-right: auto; /* Centrado horizontal */
+  padding: 40px;
 }
 
 /* Línea separadora */
@@ -42,12 +58,11 @@
 
 /* Estilos para cada canción */
 .proyecto0 {
-  width: calc(25% - 20px); /* Ajuste para 4 elementos por fila */
-  margin: 10px;
+  width: calc(30%); /* Ajuste para 3 elementos por fila en pantallas grandes */
+  margin: 15px;
   overflow: hidden;
   position: relative;
 }
-
 .proyecto0 img {
   width: 100%;
   transition: transform 0.3s ease-in-out;
@@ -78,23 +93,87 @@
 .fila {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  /* Esto distribuirá las cajas uniformemente */
 }
 
+/* Esto PARA SECTION DE CAJAS CATEGORIAS*/
+
+.categorias-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px; /* Limita el ancho máximo a 1200px */
+  margin: auto; /* Centra la sección en la página */
+}
+
+/* Estilos para cada categoría */
+.categoria {
+  flex-basis: calc(25% - 40px); /* Ajuste para 4 elementos por fila */
+  margin: 10px;
+  overflow: hidden;
+  text-align: center; /* Centra el texto y la imagen dentro de la caja */
+  transition: box-shadow 0.3s ease; 
+}
+
+.categoria:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+/* Estilos para las imágenes de las categorías */
+.categoria img {
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 10px; /* Bordes redondeados para la imagen */
+  transition: transform 0.3s ease;
+}
+
+.categoria:hover img {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+/* Estilos para los títulos de las categorías */
+.categoria h3 {
+  margin-top: 10px; /* Espacio entre la imagen y el título */
+  font-size: 20; /* Tamaño de la fuente para los títulos */
+  color: #333; /* Color del texto */
+  font-weight: bold; /* Fuente en negrita */
+  text-decoration: none;
+}
+.categoria a, .categoria a h3 {
+  text-decoration: none; /* Remueve el subrayado de los enlaces y títulos */
+  color: inherit; /* Asegura que el color del texto se herede y no cambie */
+  color: #333;
+}
+
+.categoria a:hover, .categoria a:hover h3 {
+  color: #907878; /* Color al pasar el mouse */
+  text-decoration: none; /* Opcional, si deseas quitar el subrayado en hover */
+}
+
+
+
+
 /* Estilos para modo responsivo */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .proyecto0 {
-    width: calc(50% - 20px); /* Dos elementos por fila en pantallas medianas */
-  }
-  .canciones-section p {
-     /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
-    margin: 0 40px; /* Reduce el margen en los lados */
+    flex: 0 0 calc(80% - 20px);
+    margin: 10px;
+    /* Un elemento por fila en pantallas pequeñas */
   }
 
+  .categoria {
+    flex-basis: calc(50% - 20px); /* Dos elementos por fila en pantallas medianas */
+  }
 }
 
 @media screen and (max-width: 768px) {
   .proyecto0 {
-    width: calc(100% - 20px); /* Un elemento por fila en pantallas pequeñas */
+    flex: 0 0 calc(100% - 20px);
+    margin: 10px;
+    /* Un elemento por fila en pantallas pequeñas */
+  }
+  .categoria {
+    flex-basis: calc(100% - 20px); /* Un elemento por fila en pantallas pequeñas */
   }
 }
