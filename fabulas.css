@@ -4,7 +4,7 @@
   text-align: center; /* Centra el contenido en forma horizontal */
   margin: 0 auto; /* Centra el contenido horizontalmente en el centro de la pantalla */
   margin-bottom: 0; /* Elimina el margen inferior de esta section */
-   /*La letra se adapta al tamaño de pantalla que se le pone*/
+  /*La letra se adapta al tamaño de pantalla que se le pone*/
 }
 
 .fabulas-section h2,
@@ -20,13 +20,12 @@
 #fabulas {
   max-width: 1200px;
   margin: auto;
- }
+}
 
 #fabulas .apartado {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   margin: 10px 0;
-  
 }
 
 #fabulas .apartado .fabu {
@@ -72,22 +71,20 @@
 
 /*fabu2*/
 
-.fabulas-section .fabu2 .apartado2{
+.fabulas-section .fabu2 .apartado2 {
   border-bottom: 2px solid #2e9fe6; /* Agrega una línea de 2 píxeles de grosor y color negro debajo del título */
-  border-top: 2px solid #2e9fe6;/* Agrega una línea de 2 píxeles de grosor y color negro arriba del título */
-  padding:10px 0; /* Opcional: Agrega espacio entre el título y la línea */
+  border-top: 2px solid #2e9fe6; /* Agrega una línea de 2 píxeles de grosor y color negro arriba del título */
+  padding: 10px 0; /* Opcional: Agrega espacio entre el título y la línea */
 }
 
-
-#fabulas .fabu2 .subapartado2{
+#fabulas .fabu2 .subapartado2 {
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
   padding: 15px 50px;
 }
 
-
-#fabulas .fabu2 .fabu{
+#fabulas .fabu2 .fabu {
   max-width: 450px;
   border: 1px solid #000;
   margin: 0 10px;
@@ -95,7 +92,6 @@
   overflow: hidden;
   border-radius: 10px;
 }
-
 
 #fabulas .fabu2 .fabu img {
   width: 100%;
@@ -106,12 +102,10 @@
   border-radius: 10px;
 }
 
-
 #fabulas .fabu2 .fabu:hover img {
   filter: grayscale(0);
   transform: scale(1.1);
 }
-
 
 #fabulas .fabu2 .fabu .letras {
   position: absolute;
@@ -126,13 +120,12 @@
   text-align: center;
 }
 
-
 #fabulas .fabu2 .fabu:hover .letras {
   opacity: 1;
   bottom: 0px;
 }
 
-.espacio{
+.espacio {
   margin-bottom: 20px;
 }
 
@@ -143,7 +136,7 @@
   height: auto; /* Mantiene la proporción de la imagen */
 }
 
-.fabulas-section #fabulas .unico{
+.fabulas-section #fabulas .unico {
   gap: 40px;
   display: flex;
   justify-content: center;
@@ -151,69 +144,66 @@
 }
 
 /*uva*/
-.fabulas-section .ok{
+.fabulas-section .ok {
   font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-.fabulas-section .verde{
+.fabulas-section .verde {
   padding: 14px;
   width: 250px;
-  font-family: 'Young Serif', serif ;
+  font-family: "Young Serif", serif;
   font-size: 18px;
 }
 
-.fondo{
+.fondo {
   background-image: url(imagenes/fondo.jpg);
-  background-position:top;
-  background-repeat: no-repeat ;
+  background-position: top;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
+@media screen and (max-width: 1024px) {
+  .fabulas-section p,
+  .fabulas-section h3,
+  .fabulas-section h4 {
+    margin: 0 20px; /* Agrega un margen de 20px a los lados del párrafo en pantallas pequeñas */
+  }
 
-@media screen and (max-width:1024px){
-.fabulas-section p ,
-.fabulas-section h3,
-.fabulas-section h4 {
-  margin: 0 20px; /* Agrega un margen de 20px a los lados del párrafo en pantallas pequeñas */
-}
-
-.apartado{
-  padding: 0 50px;
-}
-
+  .apartado {
+    padding: 0 50px;
+  }
 }
 
 /*responsivo*/
 /* Media Query para pantallas más pequeñas (por ejemplo, anchura máxima de 768px) */
 @media (max-width: 858px) {
-.apartado {
-  flex-direction: column; /* Cambia la dirección de los elementos a columna */
-  align-items: center; /* Centra los elementos horizontalmente en el centro de la pantalla */
-}
+  .apartado {
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    align-items: center; /* Centra los elementos horizontalmente en el centro de la pantalla */
+  }
 
-.subapartado2{
-  flex-direction: column; /* Cambia la dirección de los elementos a columna */
-  align-items: center; /* Centra los elementos horizontalmente en el centro de la pantalla */
-}
+  .subapartado2 {
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    align-items: center; /* Centra los elementos horizontalmente en el centro de la pantalla */
+  }
 
-#fabulas .apartado .fabu {
-  margin-bottom: 10px; /* Agrega un margen inferior de 20px a todos los elementos .proyecto0 en pantallas pequeñas */
-  text-align: center; /* Centra el contenido de cada proyecto */
-}
+  #fabulas .apartado .fabu {
+    margin-bottom: 10px; /* Agrega un margen inferior de 20px a todos los elementos .proyecto0 en pantallas pequeñas */
+    text-align: center; /* Centra el contenido de cada proyecto */
+  }
 
-#fabulas .subapartado2 .fabu {
-  margin-bottom: 10px; /* Agrega un margen inferior de 20px a todos los elementos .proyecto0 en pantallas pequeñas */
-  text-align: center; /* Centra el contenido de cada proyecto */
-}
+  #fabulas .subapartado2 .fabu {
+    margin-bottom: 10px; /* Agrega un margen inferior de 20px a todos los elementos .proyecto0 en pantallas pequeñas */
+    text-align: center; /* Centra el contenido de cada proyecto */
+  }
 
-.espacio {
-  margin-bottom: 10px; /* Reduzco el margen inferior a 10px en pantallas pequeñas */
-}
-.fabulas-section p ,
-.fabulas-section h3,
-.fabulas-section h4 {
-  margin: 0 20px; /* Agrega un margen de 20px a los lados del párrafo en pantallas pequeñas */
-}
-
+  .espacio {
+    margin-bottom: 10px; /* Reduzco el margen inferior a 10px en pantallas pequeñas */
+  }
+  .fabulas-section p,
+  .fabulas-section h3,
+  .fabulas-section h4 {
+    margin: 0 20px; /* Agrega un margen de 20px a los lados del párrafo en pantallas pequeñas */
+  }
 }

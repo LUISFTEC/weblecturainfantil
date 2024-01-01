@@ -1,0 +1,126 @@
+#cancion {
+  text-align: center;
+  padding: 20px;
+  background-size: cover; /* Cubre todo el contenedor */
+  background-position: center center;
+}
+
+.contenido-cancion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.letra-cancion,
+.audio-container {
+  /* Cambio aquí */
+  flex: 1; /* Cada uno ocupa la mitad del espacio disponible */
+  padding: 20px;
+}
+
+.letra-cancion {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+  font-family: "Arial", sans-serif; /* Fuente legible */
+  line-height: 1.5; /* Espacio entre líneas */
+  text-align: center; /* Centrado del texto */
+}
+
+.letra-cancion-texto {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Fondo negro con transparencia */
+  color: #ffffff; /* Color del texto blanco */
+  display: inline-block; /* Ajuste al contenido */
+  padding: 10px 20px;
+  border-radius: 10px; /* Bordes redondeados */
+  /* Resto de estilos para el texto */
+}
+
+.letra-cancion h2 {
+  color: #ffffff;
+  font-weight: bold; /* Hace que el texto sea negrita */
+  text-decoration: none;
+  font-size: 35px; /* Tamaño grande para el título */
+  margin-bottom: 15px; /* Espacio después del título */
+}
+
+.letra-cancion p {
+  font-size: 20px; /* Tamaño del texto */
+  margin-bottom: 10px; /* Espacio entre párrafos */
+  color: #000000;
+}
+
+.botones-cancion button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #34495e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botones-cancion button:hover {
+  background-color: rgb(38, 34, 34);
+}
+
+.audio-container {
+  text-align: center; /* Centra el contenido */
+  padding: 20px; /* Espaciado alrededor del reproductor */
+  max-width: auto; /* Ancho máximo del contenedor */
+  margin: auto; /* Centra el contenedor en la página */
+}
+
+.audio-container audio {
+  width: 100%; /* El reproductor ocupa todo el ancho del contenedor */
+  max-width: 500px; /* Limita el ancho máximo del reproductor */
+  height: 50px; /* Altura personalizada para el reproductor */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos personalizados para la barra de progreso y controles en navegadores webkit (Chrome, Safari) */
+.audio-container audio::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #34495e;
+  cursor: pointer;
+}
+
+.audio-container audio::-webkit-slider-runnable-track {
+  height: 10px;
+  background: #bdc3c7;
+  border-radius: 5px;
+}
+
+/* Estilos personalizados para navegadores Mozilla Firefox */
+.audio-container audio::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.audio-container audio::-moz-range-track {
+  height: 10px;
+  background: #bdc3c7;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .contenido-cancion {
+    flex-direction: column;
+  }
+
+  .letra-cancion,
+  .audio-container {
+    width: 100%;
+  }
+}

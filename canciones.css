@@ -1,160 +1,179 @@
-/* Estilos para centrar el contenido en la página de Canciones */
-.canciones-section {
-    margin: 0 auto; /* Centra el contenido horizontalmente en el centro de la pantalla */
-    margin-bottom: 0; /* Elimina el margen inferior de la primera sección */
-    text-align:justify;
-  }
-  .canciones-section h1 {
-    border-bottom: 2px solid #2e9fe6; /* Agrega una línea de 2 píxeles de grosor y color negro debajo del título */
-    padding-bottom: 10px; /* Opcional: Agrega espacio entre el título y la línea */
-  }
-  
-  /* Estilo para la imagen principal */
-  .canciones-section img {
-    max-width: 100%; /* Ajusta la imagen principal al ancho de su contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-  }
-  
-  .canciones-section h1,
+.canciones-section img {
+  width: 100%;
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+  display: block;
+  /* Esto asegura que la imagen se muestre en su propia línea */
+  margin: auto;
+  /* Centra la imagen si es más pequeña que el contenedor */
+}
+
+.canciones-section h1 {
+  font-size: 2.5em;
+  /* Tamaño más grande para mayor impacto */
+  font-weight: bold;
+  /* Negrita para destacar */
+  color: #2d2f31;
+  /* Un color oscuro para contraste */
+  margin-bottom: 20px;
+  text-align: center;
+  /* Centrado para atraer la atención */
+  padding: 20px 0;
+}
+
 .canciones-section p {
+  font-size: 1.2em;
+  /* Tamaño ligeramente más grande para fácil lectura */
+  line-height: 1.6;
+  /* Espaciado entre líneas para mejorar legibilidad */
+  color: #333333;
+  /* Color oscuro para contraste pero no tan fuerte como el negro puro */
+  margin: 0 auto;
+  /* Centra el texto */
+  margin-bottom: 30px;
+  /* Espacio debajo del párrafo */
   max-width: 1200px;
-  margin: 0 auto; /* Esto centrará la imagen y el texto horizontalmente */
-}
-  #proyecto {
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  #proyecto .titulo-seccion {
-    text-align: center;
-    font-size: 22px;
-    text-transform: none;
-    color: #ffffff;
-  
-    text-decoration-thickness: 5px;
-  }
-  
-  #proyecto .fila {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
-    
-  }
-  
-  #proyecto .fila .proyecto0 {
-    max-width: 450px;
-    border: 1px solid #000;
-    margin: 0 10px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  #proyecto .fila .proyecto0 img {
-    width: 100%;
-    height: 100%;
-    filter: grayscale(1);
-    object-fit: cover;
-    transition: 0.5s;
-  }
-  
-  #proyecto .fila .proyecto0:hover img {
-    filter: grayscale(0);
-  }
-  
-  #proyecto .fila .proyecto0 .info {
-    position: absolute;
-    left: 0px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fcfcfc;
-    width: 100%;
-    padding: 10px;
-    opacity: 0;
-    bottom: -40px;
-    transition: 0.5s;
-  }
-  
-  #proyecto .fila .proyecto0:hover .info {
-    opacity: 1;
-    bottom: 0;
-  }
-
-  #proyecto .fila:last-child {
-    border-bottom: 2px solid #2e9fe6; /* Agrega una línea al final de la última fila */
-  }
-
-  #proyecto .fila:last-child .proyecto0 {
-    margin-bottom: 20px; /* Agrega un margen inferior al último elemento de la última fila */
-  }
-  
-  
-
-  /* Estilo para las imágenes de las filas */
-.fila img {
-  max-width: 100%; /* Ajusta el ancho máximo de las imágenes al 100% del contenedor */
-  height: auto; /* Mantiene la proporción de las imágenes */
-  border: 2px solid #333; /* Agregar un borde de 2px de ancho y color gris (#333) */ 
-  border-radius: 10px; /* Esto hará que las imágenes sean redondeadas */
-  transition: transform 0.3s; /* Agrega una transición suave para el efecto de zoom */
+  text-align: justify;
+  margin: 20px;
+  margin-left: auto; /* Centrado horizontal */
+  margin-right: auto; /* Centrado horizontal */
+  padding: 40px;
 }
 
-/* Aplica el efecto de zoom al pasar el cursor sobre las imágenes */
-.fila img:hover {
-  transform: scale(1.1); /* Aumenta el tamaño de la imagen en un 10% al pasar el cursor */
+/* Línea separadora */
+.canciones-section h1:after {
+  content: "";
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  border-bottom: 2px solid #000;
 }
 
-  /* Estilo para las imágenes de las filas */
-.fila .proyecto0 {
-  max-width: 450px;
-  border: 2px solid #333; /* Agregar un borde de 2px de ancho y color gris (#333) */ 
-  border-radius: 10px; /* Esto hará que las imágenes y su contenedor sean redondeados */
-  margin: 0 10px;
-  position: relative;
+.proyecto {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para cada canción */
+.proyecto0 {
+  width: calc(30%); /* Ajuste para 3 elementos por fila en pantallas grandes */
+  margin: 15px;
   overflow: hidden;
-  transition: 0.5s;
+  position: relative;
+}
+.proyecto0 img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Aplica el efecto de zoom al pasar el cursor sobre las imágenes */
-.fila .proyecto0:hover img {
-  filter: grayscale(0);
+.proyecto0 .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
-/* Estilos para las imágenes de las filas */
-.fila .proyecto0 img {
-  width: 100%; /* Asegura que las imágenes se ajusten al ancho de su contenedor */
-  height: auto; /* Mantiene la proporción de las imágenes */
-  filter: grayscale(1);
-  object-fit: cover;
-  transition: 0.5s;
+.proyecto0:hover img {
+  transform: scale(1.1);
 }
 
-/* Aplica el efecto de zoom al pasar el cursor sobre las imágenes */
-.fila .proyecto0 img:hover {
-  filter: grayscale(0);
+.proyecto0:hover .info {
+  opacity: 1;
+}
+
+/* Estilos para la fila contenedora */
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* Esto distribuirá las cajas uniformemente */
+}
+
+/* Esto PARA SECTION DE CAJAS CATEGORIAS*/
+
+.categorias-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px; /* Limita el ancho máximo a 1200px */
+  margin: auto; /* Centra la sección en la página */
+}
+
+/* Estilos para cada categoría */
+.categoria {
+  flex-basis: calc(25% - 40px); /* Ajuste para 4 elementos por fila */
+  margin: 10px;
+  overflow: hidden;
+  text-align: center; /* Centra el texto y la imagen dentro de la caja */
+  transition: box-shadow 0.3s ease; 
+}
+
+.categoria:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+/* Estilos para las imágenes de las categorías */
+.categoria img {
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 10px; /* Bordes redondeados para la imagen */
+  transition: transform 0.3s ease;
+}
+
+.categoria:hover img {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+/* Estilos para los títulos de las categorías */
+.categoria h3 {
+  margin-top: 10px; /* Espacio entre la imagen y el título */
+  font-size: 20; /* Tamaño de la fuente para los títulos */
+  color: #333; /* Color del texto */
+  font-weight: bold; /* Fuente en negrita */
+  text-decoration: none;
+}
+.categoria a, .categoria a h3 {
+  text-decoration: none; /* Remueve el subrayado de los enlaces y títulos */
+  color: inherit; /* Asegura que el color del texto se herede y no cambie */
+  color: #333;
+}
+
+.categoria a:hover, .categoria a:hover h3 {
+  color: #907878; /* Color al pasar el mouse */
+  text-decoration: none; /* Opcional, si deseas quitar el subrayado en hover */
 }
 
 
 
-/* Media Query para pantallas más pequeñas (por ejemplo, anchura máxima de 768px) */
-@media (max-width: 858px) {
-  .fila {
-    flex-direction: column; /* Cambia la dirección de los elementos a columna */
-    align-items: center; /* Centra los elementos horizontalmente en el centro de la pantalla */
-  }
-  #proyecto .fila .proyecto0 {
-    margin-bottom: 10px; /* Agrega un margen inferior de 20px a todos los elementos .proyecto0 en pantallas pequeñas */
-    text-align: center; /* Centra el contenido de cada proyecto */
-  }
-  .fila:last-child {
-    margin-bottom: 10px; /* Reduzco el margen inferior a 10px en pantallas pequeñas */
-  }
-  .canciones-section p {
-    margin: 0 20px; /* Agrega un margen de 20px a los lados del párrafo en pantallas pequeñas */
-  }
-  .canciones-section h1 {
-    margin: 0 20px; /* Agrega un margen de 20px a los lados del título en pantallas pequeñas */
+
+/* Estilos para modo responsivo */
+@media screen and (max-width: 1000px) {
+  .proyecto0 {
+    flex: 0 0 calc(80% - 20px);
+    margin: 10px;
+    /* Un elemento por fila en pantallas pequeñas */
   }
 
+  .categoria {
+    flex-basis: calc(50% - 20px); /* Dos elementos por fila en pantallas medianas */
+  }
 }
 
-
-
+@media screen and (max-width: 768px) {
+  .proyecto0 {
+    flex: 0 0 calc(100% - 20px);
+    margin: 10px;
+    /* Un elemento por fila en pantallas pequeñas */
+  }
+  .categoria {
+    flex-basis: calc(100% - 20px); /* Un elemento por fila en pantallas pequeñas */
+  }
+}
