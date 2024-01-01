@@ -1,0 +1,219 @@
+/*fabulas*/
+
+.cuentos-section {
+    text-align: center; /* Centra el contenido en forma horizontal */
+    margin: 0 auto; /* Centra el contenido horizontalmente en el centro de la pantalla */
+    margin-bottom: 0; /* Elimina el margen inferior de esta section */
+     /*La letra se adapta al tamaño de pantalla que se le pone*/
+  }
+  
+  .cuentos-section h2,
+  .cuentos-section h3,
+  .cuentos-section p {
+    max-width: 1200px; /*Tamaño maximo que se le esta dando a las letras evitando su posible desborde*/
+    margin: 0 auto; /* Esto centrará la imagen y el texto horizontalmente */
+    text-align: justify;
+  }
+  
+  /*cuen*/
+  
+  #cuentos {
+    max-width: 1200px;
+    margin: auto;
+   }
+  
+  #cuentos .apartado {
+    display: flex;
+    justify-content:center;
+    margin: 20px 0;
+    gap: 60px;
+  }
+  
+  #cuentos .apartado .cuen {
+    max-width: 450px;
+    border: 1px solid #000;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  #cuentos .apartado .cuen img {
+    width: 250px;
+    height: auto;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 0.5s;
+    border-radius: 10px;
+  }
+  
+  #cuentos .apartado .cuen:hover img {
+    filter: grayscale(0);
+    transform: scale(1.1);
+  }
+  
+  #cuentos .apartado .cuen .letras {
+    position: absolute;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fcfcfc;
+    width: 100%;
+    padding: 5px;
+    opacity: 0;
+    bottom: -40px;
+    transition: 0.4s;
+    text-align: center;
+  }
+  
+  #cuentos .apartado .cuen:hover .letras {
+    opacity: 1;
+    bottom: 0px;
+  }
+  
+  /*fabu2*/
+  
+  .cuentos-section .cuen2 .apartado2{
+    border-bottom: 2px solid #2e9fe6; /* Agrega una línea de 2 píxeles de grosor y color negro debajo del título */
+    border-top: 2px solid #2e9fe6;/* Agrega una línea de 2 píxeles de grosor y color negro arriba del título */
+    padding:10px 0; /* Opcional: Agrega espacio entre el título y la línea */
+  }
+  
+  
+  #cuentos .cuen2 .subapartado2{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 15px 50px;
+  }
+  
+  
+  #cuentos .cuen2 .cuen{
+    max-width: 450px;
+    border: 1px solid #000;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  
+  #cuentos .cuen2 .cuen img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 0.4s;
+    border-radius: 10px;
+  }
+  
+  
+  #cuentos .cuen2 .cuen:hover img {
+    filter: grayscale(0);
+    transform: scale(1.1);
+  }
+  
+  
+  #cuentos .cuen2 .cuen .letras {
+    position: absolute;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fcfcfc;
+    width: 100%;
+    padding: 5px;
+    opacity: 0;
+    bottom: -40px;
+    transition: 0.5s;
+    text-align: center;
+  }
+  
+  
+  #cuentos .cuen2 .cuen:hover .letras {
+    opacity: 1;
+    bottom: 0px;
+  }
+  
+  .espacio{
+    margin-bottom: 20px;
+  }
+  
+  /* cortas */
+  
+  .cuentos-section img {
+    max-width: 100%; /* Ajusta la imagen principal al ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  
+  .cuentos-section #cuentos .unico{
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  
+  /*uva*/
+  .cuentos-section .ok{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .cuentos-section .verde{
+    padding: 14px;
+    width: 250px;
+    font-family: 'Young Serif', serif ;
+    font-size: 18px;
+  }
+  
+  .fondo{
+    background-image: url(imagenes/fondo.jpg);
+    background-position:top;
+    background-repeat: no-repeat ;
+    background-size: cover;
+  }
+  
+  
+  @media screen and (max-width:1024px){
+  .cuentos-section p ,
+  .cuentos-section h3,
+  .cuentos-section h4 {
+    margin: 0 20px; /* Agrega un margen de 20px a los lados del párrafo en pantallas pequeñas */
+  }
+  
+  .apartado{
+    padding: 0 50px;
+  }
+  
+  }
+  
+  /*responsivo*/
+  /* Media Query para pantallas más pequeñas (por ejemplo, anchura máxima de 768px) */
+  @media (max-width: 858px) {
+  .apartado {
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    align-items: center; /* Centra los elementos horizontalmente en el centro de la pantalla */
+  }
+  
+  .subapartado2{
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    align-items: center; /* Centra los elementos horizontalmente en el centro de la pantalla */
+  }
+  
+  #cuentos .apartado .cuen {
+    margin-bottom: 10px; /* Agrega un margen inferior de 20px a todos los elementos .proyecto0 en pantallas pequeñas */
+    text-align: center; /* Centra el contenido de cada proyecto */
+  }
+  
+  #cuentos .subapartado2 .cuen {
+    margin-bottom: 10px; /* Agrega un margen inferior de 20px a todos los elementos .proyecto0 en pantallas pequeñas */
+    text-align: center; /* Centra el contenido de cada proyecto */
+  }
+  
+  .espacio {
+    margin-bottom: 10px; /* Reduzco el margen inferior a 10px en pantallas pequeñas */
+  }
+  .cuentos-section p ,
+  .cuentos-section h3,
+  .cuentos-section h4 {
+    margin: 0 20px; /* Agrega un margen de 20px a los lados del párrafo en pantallas pequeñas */
+  }
+  
+  }
